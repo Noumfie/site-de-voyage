@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>Formulaire Personnalisé</title>
+</head>
+<body class="bg-gray-100 flex items-center justify-center min-h-screen">
+  <div class="bg-white rounded-lg shadow-lg flex w-full max-w-4xl">
+    <!-- Section Image -->
+    <div class="w-1/2 hidden md:flex items-center justify-center bg-blue-500 rounded-l-lg">
+      <img src="IMG-20241210-WA0001.jpg" alt="Image illustrative"   class="object-cover h-full">
+    </div>
+    
+    <!-- Section Formulaire -->
+    <div class="w-full md:w-1/2 p-8">
+      <!-- Boutons de navigation -->
+      <div class="flex justify-between mb-6">
+        <button class="w-1/2 text-center py-3 font-bold text-gray-700 bg-gray-200 border-2 border-gray-300 rounded-l-lg focus:outline-none hover:bg-gray-300">
+          Se connecter
+        </button>
+        <button class="w-1/2 text-center py-3 font-bold text-white bg-blue-500 border-2 border-blue-500 rounded-r-lg focus:outline-none hover:bg-blue-600">
+          S'inscrire
+        </button>
+      </div>
+
+      <form>
+        <!-- Champ Nom d'utilisateur -->
+        <div class="mb-4 relative">
+          <label for="username" class="block text-sm font-medium text-gray-700">Nom d'utilisateur</label>
+          <div class="flex items-center mt-1 border border-gray-300 rounded-lg shadow-sm">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gray-400 ml-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5.121 17.804A2.995 2.995 0 017 18h10a2.99 2.99 0 011.879-.695M15 11V9a4 4 0 10-8 0v2m10 4h.01"></path>
+            </svg>
+            <span class="h-5 w-[1px] bg-gray-300 mx-3"></span>
+            <input type="text" id="username" name="username" placeholder="Nom d'utilisateur" required
+              class="flex-1 px-2 py-2 focus:ring-blue-500 focus:border-blue-500 border-none rounded-r-lg">
+          </div>
+        </div>
+
+        <!-- Champ Email -->
+        <div class="mb-4 relative">
+          <label for="email" class="block text-sm font-medium text-gray-700">Email</label>
+          <div class="flex items-center mt-1 border border-gray-300 rounded-lg shadow-sm">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gray-400 ml-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 12h.01M4 4h16a2 2 0 012 2v12a2 2 0 01-2 2H4a2 2 0 01-2-2V6a2 2 0 012-2z"></path>
+            </svg>
+            <span class="h-5 w-[1px] bg-gray-300 mx-3"></span>
+            <input type="email" id="email" name="email" placeholder="Email" required
+              class="flex-1 px-2 py-2 focus:ring-blue-500 focus:border-blue-500 border-none rounded-r-lg">
+          </div>
+        </div>
+
+        <!-- Champ Nom Complet -->
+        <div class="mb-4 relative">
+          <label for="fullname" class="block text-sm font-medium text-gray-700">Nom Complet</label>
+          <div class="flex items-center mt-1 border border-gray-300 rounded-lg shadow-sm">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gray-400 ml-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 11c0 1.66-2 5-2 5s2 2.5 2 5 2-3.5 2-5-2-3.34-2-5z"></path>
+            </svg>
+            <span class="h-5 w-[1px] bg-gray-300 mx-3"></span>
+            <input type="text" id="fullname" name="fullname" placeholder="Nom complet" required
+              class="flex-1 px-2 py-2 focus:ring-blue-500 focus:border-blue-500 border-none rounded-r-lg">
+          </div>
+        </div>
+
+        <!-- Champ Numéro de téléphone -->
+        <div class="mb-4 relative">
+          <label for="phone" class="block text-sm font-medium text-gray-700">Numéro de téléphone</label>
+          <div class="flex items-center mt-1 border border-gray-300 rounded-lg shadow-sm">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gray-400 ml-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H5a2 2 0 01-2-2V5z"></path>
+            </svg>
+            <span class="h-5 w-[1px] bg-gray-300 mx-3"></span>
+            <input type="tel" id="phone" name="phone" placeholder="Numéro de téléphone" required
+              class="flex-1 px-2 py-2 focus:ring-blue-500 focus:border-blue-500 border-none rounded-r-lg">
+          </div>
+        </div>
+
+        <!-- Champ Mot de passe -->
+        <div class="mb-6 relative">
+          <label for="password" class="block text-sm font-medium text-gray-700">Mot de passe</label>
+          <div class="flex items-center mt-1 border border-gray-300 rounded-lg shadow-sm">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gray-400 ml-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 10h16M4 14h16M4 18h16"></path>
+            </svg>
+            <span class="h-5 w-[1px] bg-gray-300 mx-3"></span>
+            <input type="password" id="password" name="password" placeholder="Mot de passe" required
+              class="flex-1 px-2 py-2 focus:ring-blue-500 focus:border-blue-500 border-none rounded-r-lg">
+          </div>
+        </div>
+
+        <button type="submit"
+          class="w-full bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400">
+          S'inscrire
+        </button>
+      </form>
+    </div>
+  </div>
+</body>
+</html>
